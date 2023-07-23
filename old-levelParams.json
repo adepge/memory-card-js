@@ -1,0 +1,122 @@
+{
+  "1": {
+    "cards": "6",
+    "matches": "2",
+    "difficulty": "0",
+    "timeAllocation": "-1",
+    "randomEventProbability": "0",
+    "moveAllocation": "15"
+  },
+  "2": {
+    "cards": "6",
+    "matches": "2",
+    "difficulty": "1",
+    "timeAllocation": "-1",
+    "randomEventProbability": "0",
+    "moveAllocation": "15"
+  },
+  "3": {
+    "cards": "8",
+    "matches": "2",
+    "difficulty": "1",
+    "timeAllocation": "900",
+    "randomEventProbability": "0.5",
+    "moveAllocation": "18"
+  },
+  "4": {
+    "cards": "10",
+    "matches": "2",
+    "difficulty": "2",
+    "timeAllocation": "600",
+    "randomEventProbability": "0.7",
+    "moveAllocation": "20"
+  },
+  "5": {
+    "cards": "12",
+    "matches": "2",
+    "difficulty": "2",
+    "timeAllocation": "450",
+    "randomEventProbability": "0.2",
+    "moveAllocation": "20"
+  },
+  "6": {
+    "cards": "14",
+    "matches": "2",
+    "difficulty": "3",
+    "timeAllocation": "450",
+    "randomEventProbability": "0",
+    "moveAllocation": "25"
+  },
+  "7": {
+    "cards": "16",
+    "matches": "2",
+    "difficulty": "3",
+    "timeAllocation": "300",
+    "randomEventProbability": "0.2",
+    "moveAllocation": "30"
+  },
+  "8": {
+    "cards": "18",
+    "matches": "2",
+    "difficulty": "4",
+    "timeAllocation": "300",
+    "randomEventProbability": "0.8",
+    "moveAllocation": "35"
+  },
+  "9": {
+    "cards": "20",
+    "matches": "2",
+    "difficulty": "4",
+    "timeAllocation": "180",
+    "randomEventProbability": "1",
+    "moveAllocation": "40"
+  },
+  "10": {
+    "cards": "24",
+    "matches": "2",
+    "difficulty": "5",
+    "timeAllocation": "180",
+    "randomEventProbability": "0.3",
+    "moveAllocation": "45"
+  },
+  "11": {
+    "cards": "28",
+    "matches": "2",
+    "difficulty": "6",
+    "timeAllocation": "-1",
+    "randomEventProbability": "0",
+    "moveAllocation": "40"
+  },
+  "12": {
+    "cards": "30",
+    "matches": "3",
+    "difficulty": "2",
+    "timeAllocation": "360",
+    "randomEventProbability": "0.4",
+    "moveAllocation": "55"
+  },
+  "13": {
+    "cards": "33",
+    "matches": "3",
+    "difficulty": "3",
+    "timeAllocation": "300",
+    "randomEventProbability": "0.6",
+    "moveAllocation": "50"
+  },
+  "14": {
+    "cards": "36",
+    "matches": "3",
+    "difficulty": "4",
+    "timeAllocation": "240",
+    "randomEventProbability": "1",
+    "moveAllocation": "50"
+  },
+  "15": {
+    "cards": "36",
+    "matches": "3",
+    "difficulty": "5",
+    "timeAllocation": "180",
+    "randomEventProbability": "0",
+    "moveAllocation": "45"
+  }
+}
