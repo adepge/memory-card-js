@@ -1,5 +1,6 @@
 # memory-card-js
 A simple, emoji-faced card memory game. Built on a LAMP stack, has a negligible login system and mainly uses JavaScript to run.
+You can play this card game at [cardjs.adepge.com](https://cardjs.adepge.com)
 
 ### Known bugs
 - Occasionally the eventListeners lag; this affects cardFlip, timer and sounds.
