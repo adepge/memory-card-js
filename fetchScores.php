@@ -1,8 +1,8 @@
 <?php
-$servername = "localhost";
+$servername = "db";
 $username = "ecm1417";
 $password = "WebDev2021";
-$dbname = "leaderboard";
+$dbname = "pairs_game";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 

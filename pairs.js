@@ -57,8 +57,17 @@ var sfx = true;
 var music = true;
 var playback = 0;
 
+// Emoji set
+let emojiSet = new Set();
+
 function generateBoard(cardNumber = 6) {
+  emojiSet.clear();
 	// let cardTemplate = "<div class='card'></div>";
+  const maxUniqueCombinations = (7 - difficulty) * 6 * 6;
+  if (Math.floor(cardNumber / matches) > maxUniqueCombinations) {
+    console.error("Not enough unique emoji combinations for this board size and difficulty!");
+    return;
+  }
 	for (let i = 0; i < Math.floor(cardNumber / matches); i++) {
 		let template = generateCard(i);
 		container.innerHTML += template;
@@ -120,14 +129,13 @@ function pickRandom(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+// Unused, but left here for memories
 var indexCache = [];
 let prevIndex = [];
-var skinIndex, eyesIndex, mouthIndex, emojiIndex;
-
 function failUniqueThreshold(emojiIndex){
 	for (let i = 0; i < prevIndex.length; i++) {
 		let prevEmoji = prevIndex[i];
-		if (emojiIndex[0] == prevEmoji[0] || emojiIndex[1] == prevEmoji[1] || emojiIndex[2] == prevIndex[2]){
+		if (emojiIndex[0] == prevEmoji[0] || emojiIndex[1] == prevEmoji[1] || emojiIndex[2] == prevEmoji[2]){
 			return true;
 		}
 	}
@@ -138,14 +146,15 @@ function failUniqueThreshold(emojiIndex){
 	}
 }
 
+var skinIndex, eyesIndex, mouthIndex, emojiIndex;
+
 function checkEmojiIndex(emojiIndex){
-	if (indexCache.includes(emojiIndex)){
-		return checkEmojiIndex(generateIndex());
-	}
-	if(failUniqueThreshold(emojiIndex)){
-		return checkEmojiIndex(generateIndex());
-	}
-	return emojiIndex;
+  const emojiString = emojiIndex.join(',');
+  if (emojiSet.has(emojiString)){
+      return checkEmojiIndex(generateIndex());
+  }
+  emojiSet.add(emojiString);
+  return emojiIndex;
 }
 
 function generateIndex(){

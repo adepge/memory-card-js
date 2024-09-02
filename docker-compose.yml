@@ -1,0 +1,25 @@
+services:
+  web:
+    build: .
+    container_name: lamp_web
+    ports:
+      - "4879:80"
+    volumes:
+      - .:/var/www/html
+    depends_on:
+      - db
+
+  db:
+    image: mysql:5.7
+    container_name: lamp_db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: WebDev2021
+      MYSQL_DATABASE: pairs_game
+      MYSQL_USER: ecm1417
+      MYSQL_PASSWORD: WebDev2021
+    volumes:
+      - db_data:/var/lib/mysql
+
+volumes:
+  db_data:

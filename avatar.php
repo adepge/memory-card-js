@@ -9,6 +9,7 @@ $skin = isset($_COOKIE['avatar_skin']) ? '/var/www/html/' . $_COOKIE['avatar_ski
 $eyes = isset($_COOKIE['avatar_eyes']) ? '/var/www/html/' . $_COOKIE['avatar_eyes'] : '';
 $mouth = isset($_COOKIE['avatar_mouth']) ? '/var/www/html/' . $_COOKIE['avatar_mouth'] : '';
 
+
 // Create a new image
 $avatar = imagecreatetruecolor($avatarWidth, $avatarHeight);
 

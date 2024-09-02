@@ -1,7 +1,7 @@
 <?php
 	$registerfail = false;
 	if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-		$mysqli = new mysqli("localhost", "ecm1417", "WebDev2021", "users");
+    $mysqli = new mysqli("db", "ecm1417", "WebDev2021", "pairs_game");
 		$username = $_POST["username"];
 
 		$sql = "SELECT * FROM `registered_users` WHERE username = ?";

@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <?php
 session_start();
 $user = $_SESSION['user_name'];
@@ -11,10 +10,10 @@ $extraLevels = $numLevels - 10;
 }
 
 // Database connection
-$servername = "localhost";
+$servername = "db";
 $username = "ecm1417";
 $password = "WebDev2021";
-$dbname = "leaderboard";
+$dbname = "pairs_game";
 
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 
@@ -46,6 +45,7 @@ if (!isset($_COOKIE['refreshed'])) {
   header("Refresh: $delay");
 }
 ?>
+<!DOCTYPE html>
 <html>
 <head>
 	<title>Leaderboard</title>

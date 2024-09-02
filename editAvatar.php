@@ -2,7 +2,7 @@
 session_start();
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-	$mysqli = new mysqli("localhost", "ecm1417", "WebDev2021", "users");
+	$mysqli = new mysqli("db", "ecm1417", "WebDev2021", "pairs_game");
 	
 	$username = $_SESSION['user_name'];
 	$skin = $_POST['skin'];

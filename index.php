@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <?php
 session_start();
 if (isset($_COOKIE['logged_in'])) {
@@ -8,6 +7,7 @@ if (isset($_COOKIE['logged_in'])) {
   $_SESSION['avatar_mouth'] = $_COOKIE['avatar_mouth'];
 }
 ?>
+<!DOCTYPE html>
 <html>
 <head>
 	<title>Welcome to Pairs!</title>
